@@ -1,0 +1,524 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 62.2%;
+  line-height: 1.5;
+}
+
+body {
+  color: #333;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility Classes */
+.mb-1 {
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.mb-2 {
+  margin-bottom: 2.4rem;
+  display: block;
+}
+
+/* Header & Navbar */
+.page-header {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.company-logo {
+  width: 15rem;
+}
+
+.menu-toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.material-icons {
+  font-size: 2.5rem;
+  color: #f47820;
+  cursor: pointer;
+}
+
+.menu {
+  display: block;
+}
+
+.menu.none {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.close.active {
+  display: block;
+}
+
+.header-nav {
+  display: none;
+  padding: 1rem 0;
+}
+
+.header-nav.active {
+  display: block;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-flow: column;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.header-nav a:link,
+.header-nav a:visited {
+  font-weight: 700;
+  color: #006770;
+  font-size: 1.2rem;
+}
+
+/* General Info Section */
+.general-info {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1rem 2rem;
+}
+
+.general-info-illustration {
+  width: 10rem;
+}
+
+.general-info-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.general-info-text h1 {
+  font-size: 1.6rem;
+  color: #f47820;
+}
+
+.general-info-text p {
+  font-size: 1.2rem;
+}
+
+.body-header {
+  color: #006770;
+}
+
+/* Main Container (Holds main and aside elements)  */
+.main-sections {
+  padding: 1rem 2rem;
+}
+
+.section-header {
+  font-size: 1.4rem;
+  color: #f47820;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.drop-down-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.learn-text {
+  display: none;
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.learn-text.active {
+  display: block;
+}
+
+.instructor-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.instructor-picture {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.instructor-text h3 {
+  text-align: center;
+}
+
+.section-subheader {
+  font-size: 1.2rem;
+}
+
+/* Aside Section */
+.review-card {
+  min-width: 100%;
+  background-color: #fff8d8;
+  border: 1px solid #f0cc17;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 1.2rem;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.reviewer-photo {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.review-cards-carousel-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.dots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #f47820;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.secondary-color {
+  color: #006770;
+}
+
+.map {
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+/* Footer */
+footer {
+  background-color: #00454c;
+  padding: 1rem 2rem;
+}
+
+.logo-sitemap-container {
+  display: none;
+}
+
+.footer-nav {
+  color: #fff;
+}
+
+.copy {
+  color: #fff;
+  text-align: center;
+}
+
+/* Media Queries - TABLET */
+@media (min-width: 768px) {
+  /* Header & Navbar */
+  .company-logo {
+    width: 20rem;
+  }
+
+  .material-icons {
+    font-size: 3rem;
+  }
+
+  .header-nav a:link,
+  .header-nav a:visited {
+    font-size: 1.5rem;
+  }
+
+  /* General Info Section */
+  .general-info {
+    gap: 2rem;
+    padding: 2rem 2rem;
+  }
+
+  .general-info-illustration {
+    width: 15rem;
+  }
+
+  .general-info-text {
+    gap: 1.2rem;
+  }
+
+  .general-info-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .general-info-text p {
+    font-size: 1.5rem;
+  }
+
+  /* Main Container (Holds main and aside elements)  */
+  .section-header {
+    font-size: 1.8rem;
+  }
+
+  .section-text {
+    font-size: 1.5rem;
+  }
+
+  .instructor-container {
+    flex-flow: row;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .instructor-picture {
+    width: 16rem;
+    margin-bottom: 0;
+  }
+
+  .instructor-text h3 {
+    text-align: left;
+    color: #006770;
+  }
+
+  .section-subheader {
+    font-size: 1.8rem;
+  }
+
+  /* Aside Section */
+  .review-card {
+    padding: 3rem;
+  }
+
+  /* Footer */
+  .logo-sitemap-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .company-logo-2 {
+    width: 15rem;
+    min-height: 4rem;
+    flex-shrink: 1;
+  }
+
+  .copy {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Queries - LAPTOPS & DESKTOPS */
+@media (min-width: 1024px) {
+  /* Header & Navbar */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .logo-menu-container {
+    padding: 0;
+  }
+
+  .menu-toggler {
+    display: none;
+  }
+
+  .header-nav {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  .header-nav ul {
+    flex-flow: row;
+    justify-content: space-around;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  a {
+    position: relative;
+  }
+
+  .header-nav a:link,
+  .header-nav a:visited {
+    font-size: 1.6rem;
+  }
+
+  .header-nav a:hover {
+    color: #f47820;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    width: 0;
+    height: 3px;
+    background-color: #f47820;
+    transition: width 0.3s ease;
+  }
+
+  .header-nav a:hover::after {
+    width: 100%;
+  }
+
+  /* General Info Section */
+  .general-info-illustration {
+    width: 17.5rem;
+  }
+
+  .general-info-text h1 {
+    font-size: 3.2rem;
+  }
+
+  .general-info-text p {
+    font-size: 1.6rem;
+  }
+
+  /* Main Container (Holds main and aside elements)  */
+  .main-content-container {
+    display: flex;
+  }
+
+  main {
+    min-width: 70%;
+  }
+
+  .section-header {
+    font-size: 2.4rem;
+  }
+
+  .section-text {
+    font-size: 1.6rem;
+  }
+
+  .instructor-container {
+    margin-bottom: 1.2rem;
+  }
+
+  .unfold-1,
+  .unfold-2,
+  .unfold-3,
+  .unfold-4,
+  .unfold-5,
+  .unfold-6,
+  .unfold-7 {
+    display: none;
+  }
+
+  .learn-text {
+    display: block;
+    background-color: #fff;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* Aside Section */
+  aside {
+    max-width: 30%;
+  }
+
+  .review-card {
+    padding: 2rem;
+  }
+
+  .review-card {
+    min-width: 100%;
+    background-color: #fff8d8;
+    border: 1px solid #f0cc17;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 1.2rem;
+  }
+
+  .carousel {
+    margin-bottom: 0;
+    flex-flow: column;
+  }
+
+  .carousel article:last-child {
+    margin-bottom: 0;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+}
